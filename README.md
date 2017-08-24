@@ -6,4 +6,4 @@
 2. Modificar as informaçes de Conexão na ConnectionFactory.java;
 3. Executar o projeto.
 
-*Observação:* Caso deseje verificar se a restrição de chave está sendo cumprida, basta executar o query.sql no banco de dados.
+**Observação:** Caso deseje verificar se a restrição de chave está sendo cumprida, basta executar o query.sql no banco de dados.
