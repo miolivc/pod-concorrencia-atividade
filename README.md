@@ -1,6 +1,6 @@
 # pod-concorrencia-atividade
 
-Sistema de inserção de 1.000.000 de linhas no banco de dados por meio de 10 threads
+#### Sistema de inserção de 1.000.000 de linhas no banco de dados por meio de 10 threads e gerenciamento de chave primária no lado da aplicação
 
 1. Criar um database e executar o arquivo script.sql deste diretório;
 2. Modificar as informaçes de Conexão na ConnectionFactory.java;
