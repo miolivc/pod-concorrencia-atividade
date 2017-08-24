@@ -39,11 +39,11 @@ public class RowPostgres implements RowDAO {
     }
     
     @Override
-    public void addList(Row row) throws SQLException {
+    public void addList(GeradorChavePrimaria key,String name) throws SQLException {
         String sql = "INSERT INTO TB_DADOS(ID, WHO, CREATE_IN) VALUES(?,?,?)";
         PreparedStatement stmt = connection.prepareStatement(sql);
-        
         for (int i = 0; i < 100000; i++) {
+            Row row = new Row(key.generate(), name, System.currentTimeMillis());
             stmt.setInt(1, row.getId());
             stmt.setString(2, row.getWho());
             stmt.setLong(3, row.getCreateIn());

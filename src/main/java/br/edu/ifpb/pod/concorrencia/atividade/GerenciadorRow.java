@@ -27,7 +27,7 @@ public class GerenciadorRow implements Runnable {
     @Override
     public void run() {
         try {
-            dao.addList(new Row(key.generate(), name, System.currentTimeMillis()));
+            dao.addList(key, name);
         } catch (SQLException ex) {
             Logger.getLogger(GerenciadorRow.class.getName()).log(Level.SEVERE, null, ex);
         }

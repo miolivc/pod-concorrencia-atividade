@@ -14,5 +14,5 @@ import java.sql.SQLException;
 public interface RowDAO {
     
     void add(Row row);
-    void addList(Row row) throws SQLException;
+    void addList(GeradorChavePrimaria key, String name) throws SQLException;
 }

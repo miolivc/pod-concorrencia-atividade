@@ -10,14 +10,10 @@ package br.edu.ifpb.pod.concorrencia.atividade;
  * @author miolivc
  */
 public class GeradorChavePrimaria {
-    private int time, finish;
-    private volatile static int key = 0; 
-
-    public int get() {
-        return key;
-    }
     
-    public int generate() {
+    private static int key = 0; 
+    
+    public synchronized int generate() {
         return key++;
     }
     
